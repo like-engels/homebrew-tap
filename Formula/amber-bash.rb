@@ -27,4 +27,10 @@ class AmberBash < Formula
 
     assert_equal "Hello, World", shell_output("#{bin}/amber main.ab").strip
   end
+
+  def cleanup
+
+    # Prevent the caveats message from being printed again
+    odisabled "caveats"
+  end
 end
