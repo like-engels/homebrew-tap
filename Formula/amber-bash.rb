@@ -29,7 +29,6 @@ class AmberBash < Formula
   end
 
   def cleanup
-
     # Prevent the caveats message from being printed again
     odisabled "caveats"
   end
