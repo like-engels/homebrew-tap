@@ -1,7 +1,7 @@
-class AmberLang < Formula
+class AmberBash < Formula
   desc "Amber, the programming language that compiles to Bash"
   homepage "https://amber-lang.com"
-  url "https://github.com/Ph0enixKM/Amber/releases/download/0.3.3-alpha/source.tar.gz"
+  url "https://github.com/Ph0enixKM/Amber/releases/download/0.3.4-alpha/source.tar.gz"
   sha256 "54a4f681f8ea1b19543ffa1569203c3bff88ef8ffe73422424f65f8be3cf5cd0"
   license "GPL-3.0-only"
 
@@ -13,9 +13,9 @@ class AmberLang < Formula
 
   def caveats
     <<~EOS
-      Amber programs need Bash to run. macOS and most Linux distributions ship with it preinstalled, but some (Alpine, for instance) do not.
+      Programs written in amber require Bash to run. macOS and most Linux distributions ship with bash preinstalled, but some (Alpine, for instance) do not.
 
-      In order to run built programs, please make sure you have Bash installed.
+      In order to run built programs, please make sure you have Bash already installed.
     EOS
   end
 
